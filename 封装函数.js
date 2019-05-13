@@ -20,7 +20,7 @@ function addEvent(elem , type , handler) {
     }
 }
 // 解决getElementByClassName（不支持IE8以下版本）兼容性问题//
-function gteByClass(className, context) {
+function getByClass(className, context) {
     var result = [];
     context = context || document ;  // 防止没有指定context的情况
     var arr = context.getElementsByClassName("*");
